@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sokket!</title>
+        <script defer src="./node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+        <script defer src="./node_modules/howler/dist/howler.js"></script>
+        <link rel="stylesheet" href="main.css"/>
+        <script defer src="render.js"></script>
+    </head>
+        <div id = 'main' class="offBackground">
+            <div id="menu" class="is-flex">
+                <button class = "menuItem" id="muter"><i class="fas fa-volume-up"></i></button>
+                <button class = "menuItem" id="unmuter"><i class="fas fa-volume-mute"></i></button>
+                <button class = "menuItem" id="settings"><i class="fas fa-cog"></i></button>
+                <button class = "menuItem" id="minimize"><i class="far fa-window-minimize"></i></button>
+                <button class = "menuItem" id="exit"><i class="fas fa-times"></i></button>
+            </div>
+
+            <form class="is-centered is-inline-flex" id="password">
+                <input class="input" type="password" placeholder="Set Password" id="pwdInput">
+                <button class = "button is-info" id="setPwd">set!</button>
+            </form>
+
+            <div>
+                <canvas id="qrcode" width=200 height = 200></canvas>
+            </div>
+
+            
+
+            <h6 class="title is-6 has-text-black-bis" id="statText">🙋‍♂️ Welcome to Sokket!</h6>
+
+            
+
+            <div class="buttons is-centered">
+                <button id="pwrBtn" class = "button is-success" state = "On">
+                    <span class = "icon is-small">
+                        <i class="fas fa-power-off"></i>
+                    </span>
+                </button>
+                <button id="qrLoadBtn" class = "button is-primary">Reload QR Code</button>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+</html>
